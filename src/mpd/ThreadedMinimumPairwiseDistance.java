@@ -79,7 +79,7 @@ public class ThreadedMinimumPairwiseDistance implements MinimumPairwiseDistance 
 
         public boolean compare(int n, int m) {
             if (Math.abs(n - m) < lowest) {
-                lowest = n;
+                lowest = Math.abs(n-m);
                 return true;
             }
             return false;
